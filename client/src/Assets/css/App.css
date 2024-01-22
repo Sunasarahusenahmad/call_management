@@ -1,0 +1,114 @@
+.institute .tred {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .institute:hover > td > .tred {
+    cursor: pointer;
+    display: block;
+  }
+
+  .table-container {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  
+  /* toggle switch icon */
+
+  /* .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  } */
+
+  /* status css */
+
+  .pending {
+    background-color: #DD0802;
+    color: white;
+  }
+
+  .in-progress {
+    background-color: #0F5FB0;
+    color: white;
+  }
+
+  .closed {
+    background-color: #92B65E;
+    color: white;
+  }
+
+  /* print the reports */
+
+  @media print {
+    body {
+      width: 210mm; /* A4 paper width */
+      height: 297mm; /* A4 paper height */
+      padding: 20mm; /* Margins around the content */
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+      page-break-inside: avoid;
+    }
+
+    tr {
+      page-break-inside: avoid;
+    }
+    
+    .print-button {
+      display: none; /* Hide the print button when printing */
+    }
+  }
